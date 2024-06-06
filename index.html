@@ -8,16 +8,41 @@
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        /* Additional CSS for responsiveness */
-        /* You can place this in styles.css if you prefer */
-        /* For mobile devices */
-        @media only screen and (max-width: 600px) {
-            /* Adjust styles for mobile here */
+        /* Navigation Bar Styles */
+        nav {
+            background-color: #333;
+            padding: 10px;
         }
 
-        /* For tablets like iPad */
-        @media only screen and (min-width: 601px) and (max-width: 1024px) {
-            /* Adjust styles for tablets here */
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        nav li {
+            margin: 0 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+
+        /* Media Queries */
+        @media only screen and (max-width: 600px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav li {
+                margin: 5px 0;
+            }
         }
     </style>
 <body>
